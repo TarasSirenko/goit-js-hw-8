@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pracric-8-1</title>
+    <style>
+        ul {
+            list-style: none;
+        }
+        .wraper-tag {
+            margin: 40px auto;
+            display: flex;
+            padding: 20px;
+            width: fit-content;
+            border: 2px solid tomato;
+        }
+        .tag-button {
+            width: 60px;
+            height: 35px;
+        }
+        .tag-button--active {
+            background-color: blue;
+            color: white;
+        }
+        .wraper-tag :not(:last-child) {
+            margin-right: 20px;
+        }
+
+    </style>
+  </head>
+  <body>
+    <ul class="wraper-tag">
+      <li class="tag-item"><button class="tag-button" data-value = 'js'>#js</button></li>
+      <li class="tag-item"><button class="tag-button" data-value = 'css'>#css</button></li>
+      <li class="tag-item"><button class="tag-button" data-value = 'npn'>#npn</butto></li>
+      <li class="tag-item"><button class="tag-button" data-value = 'redux'>#redux</button></li>
+      <li class="tag-item"><button class="tag-button" data-value = 'html'>#html</button></li>
+    </ul>
+    <script src="./js/practic-8-1.js" type="module"></script>
+  </body>
+</html>
