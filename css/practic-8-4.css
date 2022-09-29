@@ -1,0 +1,99 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: 100vh;
+}
+.gamecontainer {
+    position: relative;
+    width: 1200px;
+    height: 600px;
+    border: 2px solid gray;
+    background-color: rgba(158, 237, 193, 0.621);
+
+}
+.dinosaur {
+    position: absolute;
+    top: 400px;
+    left: 200px;
+    width: 100px;
+    height: 100px;
+    background-image: url(../img/dinosaur.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+.moves-dinosaur {
+    animation: dinosaur-moves 1s linear ;
+}
+@keyframes dinosaur-moves {
+   0% {
+    top : 400px;
+   }
+   40% {
+    top : 250px;
+   }
+   65% {
+       top : 250px;
+   }
+   100% {
+    top : 400px;
+   }
+}
+.cactus {
+    position: absolute;
+    top: 400px;
+    left: 1140px;
+    width: 60px;
+    height: 100px;
+    background-image: url(../img/cactus.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.moves-cactus {
+    animation:cactus-moves 2s linear infinite;
+}
+
+@keyframes cactus-moves {
+from {
+        left: 1140px;
+    }
+
+    to {
+        left: 0px;
+    }
+}
+
+.skyline {
+    position: absolute;
+    top: 500px;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+.life-counter {
+    position: absolute;
+    top: 50px;
+    left: 1100px;
+    font-size: 25px;
+
+}
+.life-counter::after{
+    content: ' ';
+    display: block;
+    background-image: url(../img/heart.png);
+    background-size: contain;
+        background-repeat: no-repeat;
+        width: 25px;
+        height: 25px;
+}
+
+.time-counter {
+    position: absolute;
+        top: 50px;
+        left: 100px;
+        font-size: 25px;
+
+}
+
